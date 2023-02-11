@@ -49,10 +49,58 @@
             <div class="hero-container">
                 <h1 class="hero-title">Effective Solutions for Your Business</h1>
                 <button class="hero-btn" data-modal-open type="button">Order Service</button>
-                <!--Modal window-->
+        
+        <!--Modal window-->
+
                 <div class="backdrop is-hidden" data-modal>
                     <div class="modal">
+                        <strong class="modal-title">Leave your contacts and we will call you back</strong>
+                        <form class="modal-form">
+                            
+                            <label class="modal-form-label" for="user_name">Name</label>
+                        <div class="modal-form-group">
+                                <input class="modal-form-field" type="text" name="user_name" id="user_name" autofocus />
+                            
+                            <svg class="icon-modal" width="18px" height="18px">
+                                <use href="./images/icons.svg#icon-person"></use>
+                            </svg>
+                        </div>
+                                
+                           
+                        <label class="modal-form-label" for="user_phone">Phone</label>
+                        <div class="modal-form-group">
+                            <input class="modal-form-field" type="tel" name="user_phone" id="user_phone"/>
+                            <svg class="icon-modal" width="18px" height="18px">
+                                <use href="./images/icons.svg#icon-phone"></use>
+                            </svg>
+                        </div>
+
+
+                        <label class="modal-form-label" for="user_email">Email</label>
+                        <div class="modal-form-group">
+                            <input class="modal-form-field" type="email" name="user_email" id="user_email" />
+                            <svg class="icon-modal" width="18px" height="18px">
+                                <use href="./images/icons.svg#icon-email"></use>
+                            </svg>
+                        </div>
+                            
+                            <label class="modal-form-label" for="user_comment">
+                                Comment
+                            </label>
+                            <textarea class="comment-area-modal" id="user_comment" rows="6" placeholder="Text input"></textarea>
+                            
+
+                        <label class="agreement-form">
+                             <input class="checkbox-form" type="checkbox" name="agreement" />
+                            <span class="agreement-text">
+                          I accept the terms and conditions of the <a href="" class="agreement-link">Privacy Policy</a>
+                           </span>
+                        </label>
+
+                            <button class="hero-btn btn-send-modal" type="submit">Send</button>
+                        </form>
                         
+
                     <button class="btn-modal" data-modal-close>
                     <svg class="cross" width="8" height="8">
                         <use href="./images/icons.svg#icon-closecross"></use>
@@ -424,6 +472,23 @@
                 </li>
             </ul>
         </div>
+
+        <!--Form-->
+        
+        <form>
+            <p class="form-text">Subscribe</p>
+            <div class="form-footer">
+                <label for="users_email">
+                    <input class="field-form" type="email" name="users_email" placeholder="E-mail" id="users_email">
+                </label>
+                <button class="btn-footer" type="submit">
+                    Subscribe
+                    <svg class="icon-footer" width="24" height="24">
+                        <use href="./images/icons.svg#icon-jet"></use>
+                    </svg>
+                </button>
+            </div>
+        </form>
     </div>
        
     </footer>
